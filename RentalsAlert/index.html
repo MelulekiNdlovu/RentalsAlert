@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rentals Alert</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+<div id="area51" class="row bg-dark text-white">
+	
+</div>
+</div>
+
+
+<!--Search Form-->
+<div class="container">
+  <div class="form-group">
+    <label for="searchform">Enter a prefered location</label>
+    <input type="text" class="form-control" id="searchform">
+    <small id="emailHelp" class="form-text text-muted"></small>
+    <button id="searcha" class="btn btn-primary" onclick="dinga()">Submit</button>
+    <button class="btn btn-danger" onclick="get()">View Saved Houses</button>
+  </div>
+</div>
+
+
+<!--Prefered location search-->
+<div class="container my-2 bg-danger shadow-sm">
+	<h2 class="text-white">Houses in your prefered location</h2>
+	<div class="row" id="prefered">
+		Enter a prefered suburb to see the available houses in that location 
+	</div>
+</div>
+
+<!--Where all houses will display when online-->
+<div class="container">
+	<h2 id="headin">All available Houses</h2>
+	<div class="row" id="allHouses">
+		
+	</div>
+		
+</div>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/localforage.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
